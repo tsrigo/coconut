@@ -1,0 +1,1120 @@
+Map (num_proc=4): 100%|██████████| 500/500 [00:00<00:00, 1238.53 examples/s]
+Map (num_proc=32): 100%|██████████| 385620/385620 [00:09<00:00, 42438.10 examples/s]
+Map (num_proc=32): 100%|██████████| 500/500 [00:00<00:00, 780.71 examples/s]
+Training Epoch: 4:   0%|[34m          [0m| 0/12051 [00:00<?, ?it/s]wandb: WARNING Serializing object of type str that is 234186 bytes
+logging training data
+Training Epoch: 4/25, batch 12050/12051 completed (loss: 0.2477: 100%|[34m██████████[0m| 12051/12051 [3:29:02<00:00,  1.04s/it]
+/vol3/ctr/.conda/envs/coconut/lib/python3.12/site-packages/torch/distributed/fsdp/_state_dict_utils.py:768: UserWarning: When using ``NO_SHARD`` for ``ShardingStrategy``, full_state_dict willbe returned.
+  warnings.warn(
+/vol3/ctr/.conda/envs/coconut/lib/python3.12/site-packages/torch/distributed/fsdp/_state_dict_utils.py:711: UserWarning: When using ``NO_SHARD`` for ``ShardingStrategy``, full_state_dict willbe returned.
+  warnings.warn(
+saving model.
+eval loss 0.5103413574397564
+Test accuracy: 0.5:   1%|[34m          [0m| 4/500 [00:01<03:22,  2.45it/s] 
+Question 0: Answer = '300' CoT = '<<4-2=2>>
+<<2/.5=4>>
+<<12/4=3>>
+<<100*3=300>>'
+Full output: 'John cuts his grass to 2 inches.  It grows .5 inches per month.  When it gets to 4 inches he cuts it back down to 2 inches.  It cost $100 to get his grass cut.  How much does he pay per year?
+<|start-latent|><|latent|><|latent|><|end-latent|><<2-2=0>>
+<<0/.5=0>>
+<<12*0=0>>
+<<100/0.5=200>>
+### 200'
+Extracted Output: '200'
+Question 1: Answer = '10' CoT = '<<1.5*2=3>>
+<<3+2.5=5.5>>
+<<1.5+3+5.5=10>>'
+Full output: 'Hannah has three dogs. The first dog eats 1.5 cups of dog food a day. The second dog eats twice as much while the third dog eats 2.5 cups more than the second dog. How many cups of dog food should Hannah prepare in a day for her three dogs?
+<|start-latent|><|latent|><|latent|><|end-latent|><<3+2.5=5.5>>
+<<1.5+3+5.5=11>>
+### 11'
+Extracted Output: '11'
+Question 2: Answer = '1400' CoT = '<<30/100*2000=600>>
+<<2000-600=1400>>'
+Full output: 'Travis wants to fly to Australia. The regular tickets cost about $2000. As Travis is a student, he will get a 30% discount on this price. How much does he need to pay for his ticket?
+<|start-latent|><|latent|><|latent|><|end-latent|><<2000-600=1400>>
+### 1400'
+Extracted Output: '1400'
+Question 3: Answer = '15' CoT = '<<21/7=3>>
+<<5*3=15>>'
+Full output: 'A set of 7 spoons costs $21. If each spoon would be sold separately, how much would 5 spoons cost?
+<|start-latent|><|latent|><|latent|><|end-latent|><<3*5=15>>
+### 15'
+Extracted Output: '15'
+Question 4: Answer = '240' CoT = '<<200*3=600>>
+<<600*.4=240>>'
+Full output: 'Tom bought his games for $200.  They tripled in value and he then sold 40% of them.  How much did he sell the games for?
+<|start-latent|><|latent|><|latent|><|end-latent|><<600*40/100=240>>
+### 240'
+Extracted Output: '240'
+Device 0: Cor=164, CoT=0, Total=500
+Accuracy on validation set: 164 / 500 = 0.328
+CoT match on validation set: 0 / 500 = 0.0
+Map (num_proc=4): 100%|██████████| 500/500 [00:00<00:00, 1101.86 examples/s]
+Map (num_proc=32): 100%|██████████| 385620/385620 [00:08<00:00, 45958.16 examples/s] 
+Map (num_proc=32): 100%|██████████| 500/500 [00:00<00:00, 685.57 examples/s] 
+Training Epoch: 5:   0%|[34m          [0m| 0/12051 [00:00<?, ?it/s]wandb: WARNING Serializing object of type str that is 234186 bytes
+logging training data
+wandb: WARNING Serializing object of type str that is 203972 bytes
+Training Epoch: 5/25, batch 12050/12051 completed (loss: 0.161: 100%|[34m██████████[0m| 12051/12051 [3:28:32<00:00,  1.04s/it] 
+/vol3/ctr/.conda/envs/coconut/lib/python3.12/site-packages/torch/distributed/fsdp/_state_dict_utils.py:768: UserWarning: When using ``NO_SHARD`` for ``ShardingStrategy``, full_state_dict willbe returned.
+  warnings.warn(
+/vol3/ctr/.conda/envs/coconut/lib/python3.12/site-packages/torch/distributed/fsdp/_state_dict_utils.py:711: UserWarning: When using ``NO_SHARD`` for ``ShardingStrategy``, full_state_dict willbe returned.
+  warnings.warn(
+saving model.
+eval loss 0.5335402116179466
+Test accuracy: 0.75:   1%|[34m          [0m| 4/500 [00:01<03:22,  2.45it/s]
+Question 0: Answer = '300' CoT = '<<4-2=2>>
+<<2/.5=4>>
+<<12/4=3>>
+<<100*3=300>>'
+Full output: 'John cuts his grass to 2 inches.  It grows .5 inches per month.  When it gets to 4 inches he cuts it back down to 2 inches.  It cost $100 to get his grass cut.  How much does he pay per year?
+<|start-latent|><|latent|><|latent|><|end-latent|><<2/.5=4>>
+<<12/4=3>>
+<<100/3=33.33>>
+### 33.33'
+Extracted Output: '33.33'
+Question 1: Answer = '10' CoT = '<<1.5*2=3>>
+<<3+2.5=5.5>>
+<<1.5+3+5.5=10>>'
+Full output: 'Hannah has three dogs. The first dog eats 1.5 cups of dog food a day. The second dog eats twice as much while the third dog eats 2.5 cups more than the second dog. How many cups of dog food should Hannah prepare in a day for her three dogs?
+<|start-latent|><|latent|><|latent|><|end-latent|><<3+2.5=5.5>>
+<<1.5+3+5.5=10>>
+### 10'
+Extracted Output: '10'
+Question 2: Answer = '1400' CoT = '<<30/100*2000=600>>
+<<2000-600=1400>>'
+Full output: 'Travis wants to fly to Australia. The regular tickets cost about $2000. As Travis is a student, he will get a 30% discount on this price. How much does he need to pay for his ticket?
+<|start-latent|><|latent|><|latent|><|end-latent|><<2000-600=1400>>
+### 1400'
+Extracted Output: '1400'
+Question 3: Answer = '15' CoT = '<<21/7=3>>
+<<5*3=15>>'
+Full output: 'A set of 7 spoons costs $21. If each spoon would be sold separately, how much would 5 spoons cost?
+<|start-latent|><|latent|><|latent|><|end-latent|><<5*3=15>>
+### 15'
+Extracted Output: '15'
+Question 4: Answer = '240' CoT = '<<200*3=600>>
+<<600*.4=240>>'
+Full output: 'Tom bought his games for $200.  They tripled in value and he then sold 40% of them.  How much did he sell the games for?
+<|start-latent|><|latent|><|latent|><|end-latent|><<40/100*600=240>>
+### 240'
+Extracted Output: '240'
+Device 0: Cor=177, CoT=0, Total=500
+Accuracy on validation set: 177 / 500 = 0.354
+CoT match on validation set: 0 / 500 = 0.0
+Map (num_proc=4): 100%|██████████| 500/500 [00:00<00:00, 1134.15 examples/s]
+Map (num_proc=32): 100%|██████████| 385620/385620 [00:08<00:00, 46108.21 examples/s]
+Map (num_proc=32): 100%|██████████| 500/500 [00:00<00:00, 708.24 examples/s] 
+Training Epoch: 6:   0%|[34m          [0m| 0/12051 [00:00<?, ?it/s]wandb: WARNING Serializing object of type str that is 234186 bytes
+logging training data
+wandb: WARNING Serializing object of type str that is 203972 bytes
+Training Epoch: 6/25, batch 12050/12051 completed (loss: 0.1668: 100%|[34m██████████[0m| 12051/12051 [3:29:05<00:00,  1.04s/it]
+/vol3/ctr/.conda/envs/coconut/lib/python3.12/site-packages/torch/distributed/fsdp/_state_dict_utils.py:768: UserWarning: When using ``NO_SHARD`` for ``ShardingStrategy``, full_state_dict willbe returned.
+  warnings.warn(
+/vol3/ctr/.conda/envs/coconut/lib/python3.12/site-packages/torch/distributed/fsdp/_state_dict_utils.py:711: UserWarning: When using ``NO_SHARD`` for ``ShardingStrategy``, full_state_dict willbe returned.
+  warnings.warn(
+saving model.
+eval loss 0.5555531848222017
+Test accuracy: 0.75:   1%|[34m          [0m| 4/500 [00:01<03:19,  2.49it/s]
+Question 0: Answer = '300' CoT = '<<4-2=2>>
+<<2/.5=4>>
+<<12/4=3>>
+<<100*3=300>>'
+Full output: 'John cuts his grass to 2 inches.  It grows .5 inches per month.  When it gets to 4 inches he cuts it back down to 2 inches.  It cost $100 to get his grass cut.  How much does he pay per year?
+<|start-latent|><|latent|><|latent|><|end-latent|><<2/.5=4>>
+<<12/4=3>>
+<<100/3=33.33>>
+### 33.33'
+Extracted Output: '33.33'
+Question 1: Answer = '10' CoT = '<<1.5*2=3>>
+<<3+2.5=5.5>>
+<<1.5+3+5.5=10>>'
+Full output: 'Hannah has three dogs. The first dog eats 1.5 cups of dog food a day. The second dog eats twice as much while the third dog eats 2.5 cups more than the second dog. How many cups of dog food should Hannah prepare in a day for her three dogs?
+<|start-latent|><|latent|><|latent|><|end-latent|><<3+2.5=5.5>>
+<<1.5+3+5.5=10>>
+### 10'
+Extracted Output: '10'
+Question 2: Answer = '1400' CoT = '<<30/100*2000=600>>
+<<2000-600=1400>>'
+Full output: 'Travis wants to fly to Australia. The regular tickets cost about $2000. As Travis is a student, he will get a 30% discount on this price. How much does he need to pay for his ticket?
+<|start-latent|><|latent|><|latent|><|end-latent|><<2000-600=1400>>
+### 1400'
+Extracted Output: '1400'
+Question 3: Answer = '15' CoT = '<<21/7=3>>
+<<5*3=15>>'
+Full output: 'A set of 7 spoons costs $21. If each spoon would be sold separately, how much would 5 spoons cost?
+<|start-latent|><|latent|><|latent|><|end-latent|><<5*3=15>>
+### 15'
+Extracted Output: '15'
+Question 4: Answer = '240' CoT = '<<200*3=600>>
+<<600*.4=240>>'
+Full output: 'Tom bought his games for $200.  They tripled in value and he then sold 40% of them.  How much did he sell the games for?
+<|start-latent|><|latent|><|latent|><|end-latent|><<600*40*.01=240>>
+### 240'
+Extracted Output: '240'
+Device 0: Cor=182, CoT=0, Total=500
+Accuracy on validation set: 182 / 500 = 0.364
+CoT match on validation set: 0 / 500 = 0.0
+Map (num_proc=4): 100%|██████████| 500/500 [00:00<00:00, 1065.03 examples/s]
+Map (num_proc=32): 100%|██████████| 385620/385620 [00:08<00:00, 47038.84 examples/s]
+Map (num_proc=32): 100%|██████████| 500/500 [00:00<00:00, 686.73 examples/s] 
+Training Epoch: 7:   0%|[34m          [0m| 0/12051 [00:00<?, ?it/s]wandb: WARNING Serializing object of type str that is 234186 bytes
+logging training data
+wandb: WARNING Serializing object of type str that is 203972 bytes
+wandb: WARNING Serializing object of type str that is 177388 bytes
+Training Epoch: 7/25, batch 12050/12051 completed (loss: 0.3786: 100%|[34m██████████[0m| 12051/12051 [6:26:29<00:00,  1.92s/it]  
+/vol3/ctr/.conda/envs/coconut/lib/python3.12/site-packages/torch/distributed/fsdp/_state_dict_utils.py:768: UserWarning: When using ``NO_SHARD`` for ``ShardingStrategy``, full_state_dict willbe returned.
+  warnings.warn(
+/vol3/ctr/.conda/envs/coconut/lib/python3.12/site-packages/torch/distributed/fsdp/_state_dict_utils.py:711: UserWarning: When using ``NO_SHARD`` for ``ShardingStrategy``, full_state_dict willbe returned.
+  warnings.warn(
+saving model.
+eval loss 0.7031450979411602
+Test accuracy: 0.28: 100%|[34m██████████[0m| 500/500 [03:37<00:00,  2.30it/s]
+Question 0: Answer = '300' CoT = '<<4-2=2>>
+<<2/.5=4>>
+<<12/4=3>>
+<<100*3=300>>'
+Full output: 'John cuts his grass to 2 inches.  It grows .5 inches per month.  When it gets to 4 inches he cuts it back down to 2 inches.  It cost $100 to get his grass cut.  How much does he pay per year?
+<|start-latent|><|latent|><|latent|><|latent|><|latent|><|end-latent|><<12/2=6>>
+<<6*100=600>>
+### 600'
+Extracted Output: '600'
+Question 1: Answer = '10' CoT = '<<1.5*2=3>>
+<<3+2.5=5.5>>
+<<1.5+3+5.5=10>>'
+Full output: 'Hannah has three dogs. The first dog eats 1.5 cups of dog food a day. The second dog eats twice as much while the third dog eats 2.5 cups more than the second dog. How many cups of dog food should Hannah prepare in a day for her three dogs?
+<|start-latent|><|latent|><|latent|><|latent|><|latent|><|end-latent|><<1.5+3+5.5=10>>
+### 10'
+Extracted Output: '10'
+Question 2: Answer = '1400' CoT = '<<30/100*2000=600>>
+<<2000-600=1400>>'
+Full output: 'Travis wants to fly to Australia. The regular tickets cost about $2000. As Travis is a student, he will get a 30% discount on this price. How much does he need to pay for his ticket?
+<|start-latent|><|latent|><|latent|><|latent|><|latent|><|end-latent|>### 1400'
+Extracted Output: '1400'
+Question 3: Answer = '15' CoT = '<<21/7=3>>
+<<5*3=15>>'
+Full output: 'A set of 7 spoons costs $21. If each spoon would be sold separately, how much would 5 spoons cost?
+<|start-latent|><|latent|><|latent|><|latent|><|latent|><|end-latent|>### 15'
+Extracted Output: '15'
+Question 4: Answer = '240' CoT = '<<200*3=600>>
+<<600*.4=240>>'
+Full output: 'Tom bought his games for $200.  They tripled in value and he then sold 40% of them.  How much did he sell the games for?
+<|start-latent|><|latent|><|latent|><|latent|><|latent|><|end-latent|>### 240'
+Extracted Output: '240'
+Device 0: Cor=142, CoT=0, Total=500
+Accuracy on validation set: 142 / 500 = 0.284
+CoT match on validation set: 0 / 500 = 0.0
+Map (num_proc=4): 100%|██████████| 500/500 [00:00<00:00, 954.97 examples/s]
+Map (num_proc=32): 100%|██████████| 385620/385620 [00:09<00:00, 42407.05 examples/s]
+Map (num_proc=32): 100%|██████████| 500/500 [00:00<00:00, 565.24 examples/s] 
+Training Epoch: 8:   0%|[34m          [0m| 0/12051 [00:00<?, ?it/s]wandb: WARNING Serializing object of type str that is 234186 bytes
+logging training data
+wandb: WARNING Serializing object of type str that is 203972 bytes
+wandb: WARNING Serializing object of type str that is 177388 bytes
+wandb: WARNING Serializing object of type str that is 150750 bytes
+Training Epoch: 8/25, batch 12050/12051 completed (loss: 0.4275: 100%|[34m██████████[0m| 12051/12051 [6:38:04<00:00,  1.98s/it]  
+/vol3/ctr/.conda/envs/coconut/lib/python3.12/site-packages/torch/distributed/fsdp/_state_dict_utils.py:768: UserWarning: When using ``NO_SHARD`` for ``ShardingStrategy``, full_state_dict willbe returned.
+  warnings.warn(
+/vol3/ctr/.conda/envs/coconut/lib/python3.12/site-packages/torch/distributed/fsdp/_state_dict_utils.py:711: UserWarning: When using ``NO_SHARD`` for ``ShardingStrategy``, full_state_dict willbe returned.
+  warnings.warn(
+saving model.
+eval loss 0.6970485411584377
+Test accuracy: 0.34: 100%|[34m██████████[0m| 500/500 [03:20<00:00,  2.49it/s]
+Question 0: Answer = '300' CoT = '<<4-2=2>>
+<<2/.5=4>>
+<<12/4=3>>
+<<100*3=300>>'
+Full output: 'John cuts his grass to 2 inches.  It grows .5 inches per month.  When it gets to 4 inches he cuts it back down to 2 inches.  It cost $100 to get his grass cut.  How much does he pay per year?
+<|start-latent|><|latent|><|latent|><|latent|><|latent|><|end-latent|><<12/1=12>>
+<<100/12=8.33>>
+### 8.33'
+Extracted Output: '8.33'
+Question 1: Answer = '10' CoT = '<<1.5*2=3>>
+<<3+2.5=5.5>>
+<<1.5+3+5.5=10>>'
+Full output: 'Hannah has three dogs. The first dog eats 1.5 cups of dog food a day. The second dog eats twice as much while the third dog eats 2.5 cups more than the second dog. How many cups of dog food should Hannah prepare in a day for her three dogs?
+<|start-latent|><|latent|><|latent|><|latent|><|latent|><|end-latent|><<1.5+3+5.5=9>>
+### 9'
+Extracted Output: '9'
+Question 2: Answer = '1400' CoT = '<<30/100*2000=600>>
+<<2000-600=1400>>'
+Full output: 'Travis wants to fly to Australia. The regular tickets cost about $2000. As Travis is a student, he will get a 30% discount on this price. How much does he need to pay for his ticket?
+<|start-latent|><|latent|><|latent|><|latent|><|latent|><|end-latent|>### 1400'
+Extracted Output: '1400'
+Question 3: Answer = '15' CoT = '<<21/7=3>>
+<<5*3=15>>'
+Full output: 'A set of 7 spoons costs $21. If each spoon would be sold separately, how much would 5 spoons cost?
+<|start-latent|><|latent|><|latent|><|latent|><|latent|><|end-latent|>### 15'
+Extracted Output: '15'
+Question 4: Answer = '240' CoT = '<<200*3=600>>
+<<600*.4=240>>'
+Full output: 'Tom bought his games for $200.  They tripled in value and he then sold 40% of them.  How much did he sell the games for?
+<|start-latent|><|latent|><|latent|><|latent|><|latent|><|end-latent|>### 240'
+Extracted Output: '240'
+Device 0: Cor=169, CoT=0, Total=500
+Accuracy on validation set: 169 / 500 = 0.338
+CoT match on validation set: 0 / 500 = 0.0
+Map (num_proc=4): 100%|██████████| 500/500 [00:00<00:00, 945.15 examples/s] 
+Map (num_proc=32): 100%|██████████| 385620/385620 [00:08<00:00, 45517.28 examples/s] 
+Map (num_proc=32): 100%|██████████| 500/500 [00:00<00:00, 593.41 examples/s] 
+Training Epoch: 9:   0%|[34m          [0m| 0/12051 [00:00<?, ?it/s]wandb: WARNING Serializing object of type str that is 234186 bytes
+logging training data
+wandb: WARNING Serializing object of type str that is 203972 bytes
+wandb: WARNING Serializing object of type str that is 177388 bytes
+wandb: WARNING Serializing object of type str that is 150750 bytes
+wandb: WARNING Serializing object of type str that is 127265 bytes
+Training Epoch: 9/25, batch 12050/12051 completed (loss: 0.2964: 100%|[34m██████████[0m| 12051/12051 [6:42:58<00:00,  2.01s/it]  
+/vol3/ctr/.conda/envs/coconut/lib/python3.12/site-packages/torch/distributed/fsdp/_state_dict_utils.py:768: UserWarning: When using ``NO_SHARD`` for ``ShardingStrategy``, full_state_dict willbe returned.
+  warnings.warn(
+/vol3/ctr/.conda/envs/coconut/lib/python3.12/site-packages/torch/distributed/fsdp/_state_dict_utils.py:711: UserWarning: When using ``NO_SHARD`` for ``ShardingStrategy``, full_state_dict willbe returned.
+  warnings.warn(
+saving model.
+eval loss 0.7012166399508715
+Test accuracy: 0.35: 100%|[34m██████████[0m| 500/500 [03:39<00:00,  2.27it/s]
+Question 0: Answer = '300' CoT = '<<4-2=2>>
+<<2/.5=4>>
+<<12/4=3>>
+<<100*3=300>>'
+Full output: 'John cuts his grass to 2 inches.  It grows .5 inches per month.  When it gets to 4 inches he cuts it back down to 2 inches.  It cost $100 to get his grass cut.  How much does he pay per year?
+<|start-latent|><|latent|><|latent|><|latent|><|latent|><|end-latent|><<4*100=400>>
+<<400/12=33.33>>
+### 33.33'
+Extracted Output: '33.33'
+Question 1: Answer = '10' CoT = '<<1.5*2=3>>
+<<3+2.5=5.5>>
+<<1.5+3+5.5=10>>'
+Full output: 'Hannah has three dogs. The first dog eats 1.5 cups of dog food a day. The second dog eats twice as much while the third dog eats 2.5 cups more than the second dog. How many cups of dog food should Hannah prepare in a day for her three dogs?
+<|start-latent|><|latent|><|latent|><|latent|><|latent|><|end-latent|><<1.5+3+5=9.5>>
+### 9.5'
+Extracted Output: '9.5'
+Question 2: Answer = '1400' CoT = '<<30/100*2000=600>>
+<<2000-600=1400>>'
+Full output: 'Travis wants to fly to Australia. The regular tickets cost about $2000. As Travis is a student, he will get a 30% discount on this price. How much does he need to pay for his ticket?
+<|start-latent|><|latent|><|latent|><|latent|><|latent|><|end-latent|>### 1400'
+Extracted Output: '1400'
+Question 3: Answer = '15' CoT = '<<21/7=3>>
+<<5*3=15>>'
+Full output: 'A set of 7 spoons costs $21. If each spoon would be sold separately, how much would 5 spoons cost?
+<|start-latent|><|latent|><|latent|><|latent|><|latent|><|end-latent|>### 15'
+Extracted Output: '15'
+Question 4: Answer = '240' CoT = '<<200*3=600>>
+<<600*.4=240>>'
+Full output: 'Tom bought his games for $200.  They tripled in value and he then sold 40% of them.  How much did he sell the games for?
+<|start-latent|><|latent|><|latent|><|latent|><|latent|><|end-latent|>### 240'
+Extracted Output: '240'
+Device 0: Cor=177, CoT=0, Total=500
+Accuracy on validation set: 177 / 500 = 0.354
+CoT match on validation set: 0 / 500 = 0.0
+Map (num_proc=4): 100%|██████████| 500/500 [00:00<00:00, 900.44 examples/s]
+Map (num_proc=32): 100%|██████████| 385620/385620 [00:08<00:00, 43186.14 examples/s]
+Map (num_proc=32): 100%|██████████| 500/500 [00:00<00:00, 565.05 examples/s]
+Training Epoch: 10:   0%|[34m          [0m| 0/12051 [00:00<?, ?it/s]wandb: WARNING Serializing object of type str that is 234186 bytes
+logging training data
+wandb: WARNING Serializing object of type str that is 203972 bytes
+wandb: WARNING Serializing object of type str that is 177388 bytes
+wandb: WARNING Serializing object of type str that is 150750 bytes
+wandb: WARNING Serializing object of type str that is 127265 bytes
+wandb: WARNING Serializing object of type str that is 213400 bytes
+Training Epoch: 10/25, batch 12050/12051 completed (loss: 0.7732: 100%|[34m██████████[0m| 12051/12051 [9:20:09<00:00,  2.79s/it]  
+/vol3/ctr/.conda/envs/coconut/lib/python3.12/site-packages/torch/distributed/fsdp/_state_dict_utils.py:768: UserWarning: When using ``NO_SHARD`` for ``ShardingStrategy``, full_state_dict willbe returned.
+  warnings.warn(
+/vol3/ctr/.conda/envs/coconut/lib/python3.12/site-packages/torch/distributed/fsdp/_state_dict_utils.py:711: UserWarning: When using ``NO_SHARD`` for ``ShardingStrategy``, full_state_dict willbe returned.
+  warnings.warn(
+saving model.
+eval loss 0.8948615826666355
+Test accuracy: 0.31: 100%|[34m██████████[0m| 500/500 [03:31<00:00,  2.37it/s]
+Question 0: Answer = '300' CoT = '<<4-2=2>>
+<<2/.5=4>>
+<<12/4=3>>
+<<100*3=300>>'
+Full output: 'John cuts his grass to 2 inches.  It grows .5 inches per month.  When it gets to 4 inches he cuts it back down to 2 inches.  It cost $100 to get his grass cut.  How much does he pay per year?
+<|start-latent|><|latent|><|latent|><|latent|><|latent|><|latent|><|latent|><|end-latent|><<100/96=1.04>>
+### 1.04'
+Extracted Output: '1.04'
+Question 1: Answer = '10' CoT = '<<1.5*2=3>>
+<<3+2.5=5.5>>
+<<1.5+3+5.5=10>>'
+Full output: 'Hannah has three dogs. The first dog eats 1.5 cups of dog food a day. The second dog eats twice as much while the third dog eats 2.5 cups more than the second dog. How many cups of dog food should Hannah prepare in a day for her three dogs?
+<|start-latent|><|latent|><|latent|><|latent|><|latent|><|latent|><|latent|><|end-latent|>### 13.5'
+Extracted Output: '13.5'
+Question 2: Answer = '1400' CoT = '<<30/100*2000=600>>
+<<2000-600=1400>>'
+Full output: 'Travis wants to fly to Australia. The regular tickets cost about $2000. As Travis is a student, he will get a 30% discount on this price. How much does he need to pay for his ticket?
+<|start-latent|><|latent|><|latent|><|latent|><|latent|><|latent|><|latent|><|end-latent|>### 1400'
+Extracted Output: '1400'
+Question 3: Answer = '15' CoT = '<<21/7=3>>
+<<5*3=15>>'
+Full output: 'A set of 7 spoons costs $21. If each spoon would be sold separately, how much would 5 spoons cost?
+<|start-latent|><|latent|><|latent|><|latent|><|latent|><|latent|><|latent|><|end-latent|>### 15'
+Extracted Output: '15'
+Question 4: Answer = '240' CoT = '<<200*3=600>>
+<<600*.4=240>>'
+Full output: 'Tom bought his games for $200.  They tripled in value and he then sold 40% of them.  How much did he sell the games for?
+<|start-latent|><|latent|><|latent|><|latent|><|latent|><|latent|><|latent|><|end-latent|>### 320'
+Extracted Output: '320'
+Device 0: Cor=153, CoT=0, Total=500
+Accuracy on validation set: 153 / 500 = 0.306
+CoT match on validation set: 0 / 500 = 0.0
+Map (num_proc=4): 100%|██████████| 500/500 [00:00<00:00, 1079.54 examples/s]
+Map (num_proc=32): 100%|██████████| 385620/385620 [00:08<00:00, 44429.74 examples/s] 
+Map (num_proc=32): 100%|██████████| 500/500 [00:00<00:00, 589.22 examples/s] 
+Training Epoch: 11:   0%|[34m          [0m| 0/12051 [00:00<?, ?it/s]wandb: WARNING Serializing object of type str that is 234186 bytes
+logging training data
+wandb: WARNING Serializing object of type str that is 203972 bytes
+wandb: WARNING Serializing object of type str that is 177388 bytes
+wandb: WARNING Serializing object of type str that is 150750 bytes
+wandb: WARNING Serializing object of type str that is 127265 bytes
+wandb: WARNING Serializing object of type str that is 213400 bytes
+Training Epoch: 11/25, batch 12050/12051 completed (loss: 0.4319: 100%|[34m██████████[0m| 12051/12051 [8:56:48<00:00,  2.67s/it]  
+/vol3/ctr/.conda/envs/coconut/lib/python3.12/site-packages/torch/distributed/fsdp/_state_dict_utils.py:768: UserWarning: When using ``NO_SHARD`` for ``ShardingStrategy``, full_state_dict willbe returned.
+  warnings.warn(
+/vol3/ctr/.conda/envs/coconut/lib/python3.12/site-packages/torch/distributed/fsdp/_state_dict_utils.py:711: UserWarning: When using ``NO_SHARD`` for ``ShardingStrategy``, full_state_dict willbe returned.
+  warnings.warn(
+saving model.
+eval loss 0.8803250230848789
+Test accuracy: 0.34: 100%|[34m██████████[0m| 500/500 [03:27<00:00,  2.41it/s]
+Question 0: Answer = '300' CoT = '<<4-2=2>>
+<<2/.5=4>>
+<<12/4=3>>
+<<100*3=300>>'
+Full output: 'John cuts his grass to 2 inches.  It grows .5 inches per month.  When it gets to 4 inches he cuts it back down to 2 inches.  It cost $100 to get his grass cut.  How much does he pay per year?
+<|start-latent|><|latent|><|latent|><|latent|><|latent|><|latent|><|latent|><|end-latent|><<100/48=2.08>>
+### 2.08'
+Extracted Output: '2.08'
+Question 1: Answer = '10' CoT = '<<1.5*2=3>>
+<<3+2.5=5.5>>
+<<1.5+3+5.5=10>>'
+Full output: 'Hannah has three dogs. The first dog eats 1.5 cups of dog food a day. The second dog eats twice as much while the third dog eats 2.5 cups more than the second dog. How many cups of dog food should Hannah prepare in a day for her three dogs?
+<|start-latent|><|latent|><|latent|><|latent|><|latent|><|latent|><|latent|><|end-latent|>### 11.5'
+Extracted Output: '11.5'
+Question 2: Answer = '1400' CoT = '<<30/100*2000=600>>
+<<2000-600=1400>>'
+Full output: 'Travis wants to fly to Australia. The regular tickets cost about $2000. As Travis is a student, he will get a 30% discount on this price. How much does he need to pay for his ticket?
+<|start-latent|><|latent|><|latent|><|latent|><|latent|><|latent|><|latent|><|end-latent|>### 1400'
+Extracted Output: '1400'
+Question 3: Answer = '15' CoT = '<<21/7=3>>
+<<5*3=15>>'
+Full output: 'A set of 7 spoons costs $21. If each spoon would be sold separately, how much would 5 spoons cost?
+<|start-latent|><|latent|><|latent|><|latent|><|latent|><|latent|><|latent|><|end-latent|>### 15'
+Extracted Output: '15'
+Question 4: Answer = '240' CoT = '<<200*3=600>>
+<<600*.4=240>>'
+Full output: 'Tom bought his games for $200.  They tripled in value and he then sold 40% of them.  How much did he sell the games for?
+<|start-latent|><|latent|><|latent|><|latent|><|latent|><|latent|><|latent|><|end-latent|>### 240'
+Extracted Output: '240'
+Device 0: Cor=169, CoT=0, Total=500
+Accuracy on validation set: 169 / 500 = 0.338
+CoT match on validation set: 0 / 500 = 0.0
+Map (num_proc=4): 100%|██████████| 500/500 [00:00<00:00, 1070.00 examples/s]
+Map (num_proc=32): 100%|██████████| 385620/385620 [00:09<00:00, 42326.82 examples/s]
+Map (num_proc=32): 100%|██████████| 500/500 [00:00<00:00, 651.36 examples/s]
+Training Epoch: 12:   0%|[34m          [0m| 0/12051 [00:00<?, ?it/s]wandb: WARNING Serializing object of type str that is 234186 bytes
+logging training data
+wandb: WARNING Serializing object of type str that is 203972 bytes
+wandb: WARNING Serializing object of type str that is 177388 bytes
+wandb: WARNING Serializing object of type str that is 150750 bytes
+wandb: WARNING Serializing object of type str that is 127265 bytes
+wandb: WARNING Serializing object of type str that is 213400 bytes
+Training Epoch: 12/25, batch 12050/12051 completed (loss: 0.3728: 100%|[34m██████████[0m| 12051/12051 [8:49:43<00:00,  2.64s/it]  
+/vol3/ctr/.conda/envs/coconut/lib/python3.12/site-packages/torch/distributed/fsdp/_state_dict_utils.py:768: UserWarning: When using ``NO_SHARD`` for ``ShardingStrategy``, full_state_dict willbe returned.
+  warnings.warn(
+/vol3/ctr/.conda/envs/coconut/lib/python3.12/site-packages/torch/distributed/fsdp/_state_dict_utils.py:711: UserWarning: When using ``NO_SHARD`` for ``ShardingStrategy``, full_state_dict willbe returned.
+  warnings.warn(
+saving model.
+eval loss 0.8794188797473907
+Test accuracy: 0.32: 100%|[34m██████████[0m| 500/500 [03:21<00:00,  2.49it/s]
+Question 0: Answer = '300' CoT = '<<4-2=2>>
+<<2/.5=4>>
+<<12/4=3>>
+<<100*3=300>>'
+Full output: 'John cuts his grass to 2 inches.  It grows .5 inches per month.  When it gets to 4 inches he cuts it back down to 2 inches.  It cost $100 to get his grass cut.  How much does he pay per year?
+<|start-latent|><|latent|><|latent|><|latent|><|latent|><|latent|><|latent|><|end-latent|><<100*1=100>>
+### 100'
+Extracted Output: '100'
+Question 1: Answer = '10' CoT = '<<1.5*2=3>>
+<<3+2.5=5.5>>
+<<1.5+3+5.5=10>>'
+Full output: 'Hannah has three dogs. The first dog eats 1.5 cups of dog food a day. The second dog eats twice as much while the third dog eats 2.5 cups more than the second dog. How many cups of dog food should Hannah prepare in a day for her three dogs?
+<|start-latent|><|latent|><|latent|><|latent|><|latent|><|latent|><|latent|><|end-latent|>### 10'
+Extracted Output: '10'
+Question 2: Answer = '1400' CoT = '<<30/100*2000=600>>
+<<2000-600=1400>>'
+Full output: 'Travis wants to fly to Australia. The regular tickets cost about $2000. As Travis is a student, he will get a 30% discount on this price. How much does he need to pay for his ticket?
+<|start-latent|><|latent|><|latent|><|latent|><|latent|><|latent|><|latent|><|end-latent|>### 1400'
+Extracted Output: '1400'
+Question 3: Answer = '15' CoT = '<<21/7=3>>
+<<5*3=15>>'
+Full output: 'A set of 7 spoons costs $21. If each spoon would be sold separately, how much would 5 spoons cost?
+<|start-latent|><|latent|><|latent|><|latent|><|latent|><|latent|><|latent|><|end-latent|>### 15'
+Extracted Output: '15'
+Question 4: Answer = '240' CoT = '<<200*3=600>>
+<<600*.4=240>>'
+Full output: 'Tom bought his games for $200.  They tripled in value and he then sold 40% of them.  How much did he sell the games for?
+<|start-latent|><|latent|><|latent|><|latent|><|latent|><|latent|><|latent|><|end-latent|>### 240'
+Extracted Output: '240'
+Device 0: Cor=159, CoT=0, Total=500
+Accuracy on validation set: 159 / 500 = 0.318
+CoT match on validation set: 0 / 500 = 0.0
+Map (num_proc=4): 100%|██████████| 500/500 [00:00<00:00, 952.53 examples/s]
+Map (num_proc=32): 100%|██████████| 385620/385620 [00:08<00:00, 45319.79 examples/s] 
+Map (num_proc=32): 100%|██████████| 500/500 [00:00<00:00, 580.36 examples/s]
+Training Epoch: 13:   0%|[34m          [0m| 0/12051 [00:00<?, ?it/s]wandb: WARNING Serializing object of type str that is 234186 bytes
+logging training data
+wandb: WARNING Serializing object of type str that is 203972 bytes
+wandb: WARNING Serializing object of type str that is 177388 bytes
+wandb: WARNING Serializing object of type str that is 150750 bytes
+wandb: WARNING Serializing object of type str that is 127265 bytes
+wandb: WARNING Serializing object of type str that is 213400 bytes
+wandb: WARNING Serializing object of type str that is 124364 bytes
+Training Epoch: 13/25, batch 12050/12051 completed (loss: 0.5807: 100%|[34m██████████[0m| 12051/12051 [7:07:11<00:00,  2.13s/it]  
+/vol3/ctr/.conda/envs/coconut/lib/python3.12/site-packages/torch/distributed/fsdp/_state_dict_utils.py:768: UserWarning: When using ``NO_SHARD`` for ``ShardingStrategy``, full_state_dict willbe returned.
+  warnings.warn(
+/vol3/ctr/.conda/envs/coconut/lib/python3.12/site-packages/torch/distributed/fsdp/_state_dict_utils.py:711: UserWarning: When using ``NO_SHARD`` for ``ShardingStrategy``, full_state_dict willbe returned.
+  warnings.warn(
+saving model.
+eval loss 1.1972883008420467
+Test accuracy: 0.29: 100%|[34m██████████[0m| 500/500 [03:26<00:00,  2.42it/s]
+Question 0: Answer = '300' CoT = '<<4-2=2>>
+<<2/.5=4>>
+<<12/4=3>>
+<<100*3=300>>'
+Full output: 'John cuts his grass to 2 inches.  It grows .5 inches per month.  When it gets to 4 inches he cuts it back down to 2 inches.  It cost $100 to get his grass cut.  How much does he pay per year?
+<|start-latent|><|latent|><|latent|><|latent|><|latent|><|latent|><|latent|><|end-latent|>### 300'
+Extracted Output: '300'
+Question 1: Answer = '10' CoT = '<<1.5*2=3>>
+<<3+2.5=5.5>>
+<<1.5+3+5.5=10>>'
+Full output: 'Hannah has three dogs. The first dog eats 1.5 cups of dog food a day. The second dog eats twice as much while the third dog eats 2.5 cups more than the second dog. How many cups of dog food should Hannah prepare in a day for her three dogs?
+<|start-latent|><|latent|><|latent|><|latent|><|latent|><|latent|><|latent|><|end-latent|>### 13.5'
+Extracted Output: '13.5'
+Question 2: Answer = '1400' CoT = '<<30/100*2000=600>>
+<<2000-600=1400>>'
+Full output: 'Travis wants to fly to Australia. The regular tickets cost about $2000. As Travis is a student, he will get a 30% discount on this price. How much does he need to pay for his ticket?
+<|start-latent|><|latent|><|latent|><|latent|><|latent|><|latent|><|latent|><|end-latent|>### 1400'
+Extracted Output: '1400'
+Question 3: Answer = '15' CoT = '<<21/7=3>>
+<<5*3=15>>'
+Full output: 'A set of 7 spoons costs $21. If each spoon would be sold separately, how much would 5 spoons cost?
+<|start-latent|><|latent|><|latent|><|latent|><|latent|><|latent|><|latent|><|end-latent|>### 63'
+Extracted Output: '63'
+Question 4: Answer = '240' CoT = '<<200*3=600>>
+<<600*.4=240>>'
+Full output: 'Tom bought his games for $200.  They tripled in value and he then sold 40% of them.  How much did he sell the games for?
+<|start-latent|><|latent|><|latent|><|latent|><|latent|><|latent|><|latent|><|end-latent|>### 240'
+Extracted Output: '240'
+Device 0: Cor=143, CoT=0, Total=500
+Accuracy on validation set: 143 / 500 = 0.286
+CoT match on validation set: 0 / 500 = 0.0
+Map (num_proc=4): 100%|██████████| 500/500 [00:00<00:00, 1042.96 examples/s]
+Map (num_proc=32): 100%|██████████| 385620/385620 [00:07<00:00, 48525.10 examples/s] 
+Map (num_proc=32): 100%|██████████| 500/500 [00:00<00:00, 630.88 examples/s] 
+Training Epoch: 14:   0%|[34m          [0m| 0/12051 [00:00<?, ?it/s]wandb: WARNING Serializing object of type str that is 234186 bytes
+logging training data
+wandb: WARNING Serializing object of type str that is 203972 bytes
+wandb: WARNING Serializing object of type str that is 177388 bytes
+wandb: WARNING Serializing object of type str that is 150750 bytes
+wandb: WARNING Serializing object of type str that is 127265 bytes
+wandb: WARNING Serializing object of type str that is 213400 bytes
+wandb: WARNING Serializing object of type str that is 124364 bytes
+Training Epoch: 14/25, batch 12050/12051 completed (loss: 0.5688: 100%|[34m██████████[0m| 12051/12051 [7:41:56<00:00,  2.30s/it]  
+/vol3/ctr/.conda/envs/coconut/lib/python3.12/site-packages/torch/distributed/fsdp/_state_dict_utils.py:768: UserWarning: When using ``NO_SHARD`` for ``ShardingStrategy``, full_state_dict willbe returned.
+  warnings.warn(
+/vol3/ctr/.conda/envs/coconut/lib/python3.12/site-packages/torch/distributed/fsdp/_state_dict_utils.py:711: UserWarning: When using ``NO_SHARD`` for ``ShardingStrategy``, full_state_dict willbe returned.
+  warnings.warn(
+saving model.
+eval loss 1.1965072602033615
+Test accuracy: 0.3: 100%|[34m██████████[0m| 500/500 [03:21<00:00,  2.48it/s] 
+Question 0: Answer = '300' CoT = '<<4-2=2>>
+<<2/.5=4>>
+<<12/4=3>>
+<<100*3=300>>'
+Full output: 'John cuts his grass to 2 inches.  It grows .5 inches per month.  When it gets to 4 inches he cuts it back down to 2 inches.  It cost $100 to get his grass cut.  How much does he pay per year?
+<|start-latent|><|latent|><|latent|><|latent|><|latent|><|latent|><|latent|><|end-latent|>### 300'
+Extracted Output: '300'
+Question 1: Answer = '10' CoT = '<<1.5*2=3>>
+<<3+2.5=5.5>>
+<<1.5+3+5.5=10>>'
+Full output: 'Hannah has three dogs. The first dog eats 1.5 cups of dog food a day. The second dog eats twice as much while the third dog eats 2.5 cups more than the second dog. How many cups of dog food should Hannah prepare in a day for her three dogs?
+<|start-latent|><|latent|><|latent|><|latent|><|latent|><|latent|><|latent|><|end-latent|>### 9'
+Extracted Output: '9'
+Question 2: Answer = '1400' CoT = '<<30/100*2000=600>>
+<<2000-600=1400>>'
+Full output: 'Travis wants to fly to Australia. The regular tickets cost about $2000. As Travis is a student, he will get a 30% discount on this price. How much does he need to pay for his ticket?
+<|start-latent|><|latent|><|latent|><|latent|><|latent|><|latent|><|latent|><|end-latent|>### 1400'
+Extracted Output: '1400'
+Question 3: Answer = '15' CoT = '<<21/7=3>>
+<<5*3=15>>'
+Full output: 'A set of 7 spoons costs $21. If each spoon would be sold separately, how much would 5 spoons cost?
+<|start-latent|><|latent|><|latent|><|latent|><|latent|><|latent|><|latent|><|end-latent|>### 15'
+Extracted Output: '15'
+Question 4: Answer = '240' CoT = '<<200*3=600>>
+<<600*.4=240>>'
+Full output: 'Tom bought his games for $200.  They tripled in value and he then sold 40% of them.  How much did he sell the games for?
+<|start-latent|><|latent|><|latent|><|latent|><|latent|><|latent|><|latent|><|end-latent|>### 240'
+Extracted Output: '240'
+Device 0: Cor=149, CoT=0, Total=500
+Accuracy on validation set: 149 / 500 = 0.298
+CoT match on validation set: 0 / 500 = 0.0
+Map (num_proc=4): 100%|██████████| 500/500 [00:00<00:00, 952.71 examples/s]
+Map (num_proc=32): 100%|██████████| 385620/385620 [00:07<00:00, 52455.21 examples/s] 
+Map (num_proc=32): 100%|██████████| 500/500 [00:00<00:00, 617.54 examples/s]
+Training Epoch: 15:   0%|[34m          [0m| 0/12051 [00:00<?, ?it/s]wandb: WARNING Serializing object of type str that is 234186 bytes
+logging training data
+wandb: WARNING Serializing object of type str that is 203972 bytes
+wandb: WARNING Serializing object of type str that is 177388 bytes
+wandb: WARNING Serializing object of type str that is 150750 bytes
+wandb: WARNING Serializing object of type str that is 127265 bytes
+wandb: WARNING Serializing object of type str that is 213400 bytes
+wandb: WARNING Serializing object of type str that is 124364 bytes
+Training Epoch: 15/25, batch 12050/12051 completed (loss: 0.5035: 100%|[34m██████████[0m| 12051/12051 [7:10:46<00:00,  2.14s/it]  
+/vol3/ctr/.conda/envs/coconut/lib/python3.12/site-packages/torch/distributed/fsdp/_state_dict_utils.py:768: UserWarning: When using ``NO_SHARD`` for ``ShardingStrategy``, full_state_dict willbe returned.
+  warnings.warn(
+/vol3/ctr/.conda/envs/coconut/lib/python3.12/site-packages/torch/distributed/fsdp/_state_dict_utils.py:711: UserWarning: When using ``NO_SHARD`` for ``ShardingStrategy``, full_state_dict willbe returned.
+  warnings.warn(
+saving model.
+eval loss 1.2066433019936085
+Test accuracy: 0.28: 100%|[34m██████████[0m| 500/500 [03:14<00:00,  2.58it/s]
+Question 0: Answer = '300' CoT = '<<4-2=2>>
+<<2/.5=4>>
+<<12/4=3>>
+<<100*3=300>>'
+Full output: 'John cuts his grass to 2 inches.  It grows .5 inches per month.  When it gets to 4 inches he cuts it back down to 2 inches.  It cost $100 to get his grass cut.  How much does he pay per year?
+<|start-latent|><|latent|><|latent|><|latent|><|latent|><|latent|><|latent|><|end-latent|>### 100'
+Extracted Output: '100'
+Question 1: Answer = '10' CoT = '<<1.5*2=3>>
+<<3+2.5=5.5>>
+<<1.5+3+5.5=10>>'
+Full output: 'Hannah has three dogs. The first dog eats 1.5 cups of dog food a day. The second dog eats twice as much while the third dog eats 2.5 cups more than the second dog. How many cups of dog food should Hannah prepare in a day for her three dogs?
+<|start-latent|><|latent|><|latent|><|latent|><|latent|><|latent|><|latent|><|end-latent|>### 13'
+Extracted Output: '13'
+Question 2: Answer = '1400' CoT = '<<30/100*2000=600>>
+<<2000-600=1400>>'
+Full output: 'Travis wants to fly to Australia. The regular tickets cost about $2000. As Travis is a student, he will get a 30% discount on this price. How much does he need to pay for his ticket?
+<|start-latent|><|latent|><|latent|><|latent|><|latent|><|latent|><|latent|><|end-latent|>### 1400'
+Extracted Output: '1400'
+Question 3: Answer = '15' CoT = '<<21/7=3>>
+<<5*3=15>>'
+Full output: 'A set of 7 spoons costs $21. If each spoon would be sold separately, how much would 5 spoons cost?
+<|start-latent|><|latent|><|latent|><|latent|><|latent|><|latent|><|latent|><|end-latent|>### 15'
+Extracted Output: '15'
+Question 4: Answer = '240' CoT = '<<200*3=600>>
+<<600*.4=240>>'
+Full output: 'Tom bought his games for $200.  They tripled in value and he then sold 40% of them.  How much did he sell the games for?
+<|start-latent|><|latent|><|latent|><|latent|><|latent|><|latent|><|latent|><|end-latent|>### 240'
+Extracted Output: '240'
+Device 0: Cor=141, CoT=0, Total=500
+Accuracy on validation set: 141 / 500 = 0.282
+CoT match on validation set: 0 / 500 = 0.0
+Map (num_proc=4): 100%|██████████| 500/500 [00:00<00:00, 1054.08 examples/s]
+Map (num_proc=32): 100%|██████████| 385620/385620 [00:07<00:00, 50136.21 examples/s] 
+Map (num_proc=32): 100%|██████████| 500/500 [00:00<00:00, 626.36 examples/s] 
+Training Epoch: 16:   0%|[34m          [0m| 0/12051 [00:00<?, ?it/s]wandb: WARNING Serializing object of type str that is 234186 bytes
+logging training data
+wandb: WARNING Serializing object of type str that is 203972 bytes
+wandb: WARNING Serializing object of type str that is 177388 bytes
+wandb: WARNING Serializing object of type str that is 150750 bytes
+wandb: WARNING Serializing object of type str that is 127265 bytes
+wandb: WARNING Serializing object of type str that is 213400 bytes
+wandb: WARNING Serializing object of type str that is 124364 bytes
+Training Epoch: 16/25, batch 12050/12051 completed (loss: 0.4164: 100%|[34m██████████[0m| 12051/12051 [6:59:48<00:00,  2.09s/it]  
+/vol3/ctr/.conda/envs/coconut/lib/python3.12/site-packages/torch/distributed/fsdp/_state_dict_utils.py:768: UserWarning: When using ``NO_SHARD`` for ``ShardingStrategy``, full_state_dict willbe returned.
+  warnings.warn(
+/vol3/ctr/.conda/envs/coconut/lib/python3.12/site-packages/torch/distributed/fsdp/_state_dict_utils.py:711: UserWarning: When using ``NO_SHARD`` for ``ShardingStrategy``, full_state_dict willbe returned.
+  warnings.warn(
+saving model.
+eval loss 1.275142963975668
+Test accuracy: 0.29: 100%|[34m██████████[0m| 500/500 [03:13<00:00,  2.59it/s]
+Question 0: Answer = '300' CoT = '<<4-2=2>>
+<<2/.5=4>>
+<<12/4=3>>
+<<100*3=300>>'
+Full output: 'John cuts his grass to 2 inches.  It grows .5 inches per month.  When it gets to 4 inches he cuts it back down to 2 inches.  It cost $100 to get his grass cut.  How much does he pay per year?
+<|start-latent|><|latent|><|latent|><|latent|><|latent|><|latent|><|latent|><|end-latent|>### 200'
+Extracted Output: '200'
+Question 1: Answer = '10' CoT = '<<1.5*2=3>>
+<<3+2.5=5.5>>
+<<1.5+3+5.5=10>>'
+Full output: 'Hannah has three dogs. The first dog eats 1.5 cups of dog food a day. The second dog eats twice as much while the third dog eats 2.5 cups more than the second dog. How many cups of dog food should Hannah prepare in a day for her three dogs?
+<|start-latent|><|latent|><|latent|><|latent|><|latent|><|latent|><|latent|><|end-latent|>### 14.5'
+Extracted Output: '14.5'
+Question 2: Answer = '1400' CoT = '<<30/100*2000=600>>
+<<2000-600=1400>>'
+Full output: 'Travis wants to fly to Australia. The regular tickets cost about $2000. As Travis is a student, he will get a 30% discount on this price. How much does he need to pay for his ticket?
+<|start-latent|><|latent|><|latent|><|latent|><|latent|><|latent|><|latent|><|end-latent|>### 1400'
+Extracted Output: '1400'
+Question 3: Answer = '15' CoT = '<<21/7=3>>
+<<5*3=15>>'
+Full output: 'A set of 7 spoons costs $21. If each spoon would be sold separately, how much would 5 spoons cost?
+<|start-latent|><|latent|><|latent|><|latent|><|latent|><|latent|><|latent|><|end-latent|>### 15'
+Extracted Output: '15'
+Question 4: Answer = '240' CoT = '<<200*3=600>>
+<<600*.4=240>>'
+Full output: 'Tom bought his games for $200.  They tripled in value and he then sold 40% of them.  How much did he sell the games for?
+<|start-latent|><|latent|><|latent|><|latent|><|latent|><|latent|><|latent|><|end-latent|>### 240'
+Extracted Output: '240'
+Device 0: Cor=145, CoT=0, Total=500
+Accuracy on validation set: 145 / 500 = 0.29
+CoT match on validation set: 0 / 500 = 0.0
+Map (num_proc=4): 100%|██████████| 500/500 [00:00<00:00, 1032.44 examples/s]
+Map (num_proc=32): 100%|██████████| 385620/385620 [00:07<00:00, 49545.16 examples/s] 
+Map (num_proc=32): 100%|██████████| 500/500 [00:00<00:00, 622.07 examples/s]
+Training Epoch: 17:   0%|[34m          [0m| 0/12051 [00:00<?, ?it/s]wandb: WARNING Serializing object of type str that is 234186 bytes
+logging training data
+wandb: WARNING Serializing object of type str that is 203972 bytes
+wandb: WARNING Serializing object of type str that is 177388 bytes
+wandb: WARNING Serializing object of type str that is 150750 bytes
+wandb: WARNING Serializing object of type str that is 127265 bytes
+wandb: WARNING Serializing object of type str that is 213400 bytes
+wandb: WARNING Serializing object of type str that is 124364 bytes
+Training Epoch: 17/25, batch 12050/12051 completed (loss: 0.6479: 100%|[34m██████████[0m| 12051/12051 [7:00:31<00:00,  2.09s/it]  
+/vol3/ctr/.conda/envs/coconut/lib/python3.12/site-packages/torch/distributed/fsdp/_state_dict_utils.py:768: UserWarning: When using ``NO_SHARD`` for ``ShardingStrategy``, full_state_dict willbe returned.
+  warnings.warn(
+/vol3/ctr/.conda/envs/coconut/lib/python3.12/site-packages/torch/distributed/fsdp/_state_dict_utils.py:711: UserWarning: When using ``NO_SHARD`` for ``ShardingStrategy``, full_state_dict willbe returned.
+  warnings.warn(
+saving model.
+eval loss 1.3210983946919441
+Test accuracy: 0.21: 100%|[34m██████████[0m| 500/500 [03:12<00:00,  2.60it/s]
+Question 0: Answer = '300' CoT = '<<4-2=2>>
+<<2/.5=4>>
+<<12/4=3>>
+<<100*3=300>>'
+Full output: 'John cuts his grass to 2 inches.  It grows .5 inches per month.  When it gets to 4 inches he cuts it back down to 2 inches.  It cost $100 to get his grass cut.  How much does he pay per year?
+<|start-latent|><|latent|><|latent|><|latent|><|latent|><|latent|><|latent|><|end-latent|>### 600'
+Extracted Output: '600'
+Question 1: Answer = '10' CoT = '<<1.5*2=3>>
+<<3+2.5=5.5>>
+<<1.5+3+5.5=10>>'
+Full output: 'Hannah has three dogs. The first dog eats 1.5 cups of dog food a day. The second dog eats twice as much while the third dog eats 2.5 cups more than the second dog. How many cups of dog food should Hannah prepare in a day for her three dogs?
+<|start-latent|><|latent|><|latent|><|latent|><|latent|><|latent|><|latent|><|end-latent|>### 7.5'
+Extracted Output: '7.5'
+Question 2: Answer = '1400' CoT = '<<30/100*2000=600>>
+<<2000-600=1400>>'
+Full output: 'Travis wants to fly to Australia. The regular tickets cost about $2000. As Travis is a student, he will get a 30% discount on this price. How much does he need to pay for his ticket?
+<|start-latent|><|latent|><|latent|><|latent|><|latent|><|latent|><|latent|><|end-latent|>### 1400'
+Extracted Output: '1400'
+Question 3: Answer = '15' CoT = '<<21/7=3>>
+<<5*3=15>>'
+Full output: 'A set of 7 spoons costs $21. If each spoon would be sold separately, how much would 5 spoons cost?
+<|start-latent|><|latent|><|latent|><|latent|><|latent|><|latent|><|latent|><|end-latent|>### 15'
+Extracted Output: '15'
+Question 4: Answer = '240' CoT = '<<200*3=600>>
+<<600*.4=240>>'
+Full output: 'Tom bought his games for $200.  They tripled in value and he then sold 40% of them.  How much did he sell the games for?
+<|start-latent|><|latent|><|latent|><|latent|><|latent|><|latent|><|latent|><|end-latent|>### 240'
+Extracted Output: '240'
+Device 0: Cor=105, CoT=0, Total=500
+Accuracy on validation set: 105 / 500 = 0.21
+CoT match on validation set: 0 / 500 = 0.0
+Map (num_proc=4): 100%|██████████| 500/500 [00:00<00:00, 1025.94 examples/s]
+Map (num_proc=32): 100%|██████████| 385620/385620 [00:07<00:00, 48666.45 examples/s] 
+Map (num_proc=32): 100%|██████████| 500/500 [00:00<00:00, 556.86 examples/s]
+Training Epoch: 18:   0%|[34m          [0m| 0/12051 [00:00<?, ?it/s]wandb: WARNING Serializing object of type str that is 234186 bytes
+logging training data
+wandb: WARNING Serializing object of type str that is 203972 bytes
+wandb: WARNING Serializing object of type str that is 177388 bytes
+wandb: WARNING Serializing object of type str that is 150750 bytes
+wandb: WARNING Serializing object of type str that is 127265 bytes
+wandb: WARNING Serializing object of type str that is 213400 bytes
+wandb: WARNING Serializing object of type str that is 124364 bytes
+Training Epoch: 18/25, batch 12050/12051 completed (loss: 0.7034: 100%|[34m██████████[0m| 12051/12051 [7:03:11<00:00,  2.11s/it]  
+/vol3/ctr/.conda/envs/coconut/lib/python3.12/site-packages/torch/distributed/fsdp/_state_dict_utils.py:768: UserWarning: When using ``NO_SHARD`` for ``ShardingStrategy``, full_state_dict willbe returned.
+  warnings.warn(
+/vol3/ctr/.conda/envs/coconut/lib/python3.12/site-packages/torch/distributed/fsdp/_state_dict_utils.py:711: UserWarning: When using ``NO_SHARD`` for ``ShardingStrategy``, full_state_dict willbe returned.
+  warnings.warn(
+saving model.
+eval loss 1.2434243373572826
+Test accuracy: 0.28: 100%|[34m██████████[0m| 500/500 [03:17<00:00,  2.53it/s]
+Question 0: Answer = '300' CoT = '<<4-2=2>>
+<<2/.5=4>>
+<<12/4=3>>
+<<100*3=300>>'
+Full output: 'John cuts his grass to 2 inches.  It grows .5 inches per month.  When it gets to 4 inches he cuts it back down to 2 inches.  It cost $100 to get his grass cut.  How much does he pay per year?
+<|start-latent|><|latent|><|latent|><|latent|><|latent|><|latent|><|latent|><|end-latent|>### 240'
+Extracted Output: '240'
+Question 1: Answer = '10' CoT = '<<1.5*2=3>>
+<<3+2.5=5.5>>
+<<1.5+3+5.5=10>>'
+Full output: 'Hannah has three dogs. The first dog eats 1.5 cups of dog food a day. The second dog eats twice as much while the third dog eats 2.5 cups more than the second dog. How many cups of dog food should Hannah prepare in a day for her three dogs?
+<|start-latent|><|latent|><|latent|><|latent|><|latent|><|latent|><|latent|><|end-latent|>### 13'
+Extracted Output: '13'
+Question 2: Answer = '1400' CoT = '<<30/100*2000=600>>
+<<2000-600=1400>>'
+Full output: 'Travis wants to fly to Australia. The regular tickets cost about $2000. As Travis is a student, he will get a 30% discount on this price. How much does he need to pay for his ticket?
+<|start-latent|><|latent|><|latent|><|latent|><|latent|><|latent|><|latent|><|end-latent|>### 1400'
+Extracted Output: '1400'
+Question 3: Answer = '15' CoT = '<<21/7=3>>
+<<5*3=15>>'
+Full output: 'A set of 7 spoons costs $21. If each spoon would be sold separately, how much would 5 spoons cost?
+<|start-latent|><|latent|><|latent|><|latent|><|latent|><|latent|><|latent|><|end-latent|>### 15'
+Extracted Output: '15'
+Question 4: Answer = '240' CoT = '<<200*3=600>>
+<<600*.4=240>>'
+Full output: 'Tom bought his games for $200.  They tripled in value and he then sold 40% of them.  How much did he sell the games for?
+<|start-latent|><|latent|><|latent|><|latent|><|latent|><|latent|><|latent|><|end-latent|>### 240'
+Extracted Output: '240'
+Device 0: Cor=141, CoT=0, Total=500
+Accuracy on validation set: 141 / 500 = 0.282
+CoT match on validation set: 0 / 500 = 0.0
+Map (num_proc=4): 100%|██████████| 500/500 [00:00<00:00, 932.75 examples/s]
+Map (num_proc=32): 100%|██████████| 385620/385620 [00:07<00:00, 48898.99 examples/s] 
+Map (num_proc=32): 100%|██████████| 500/500 [00:00<00:00, 561.02 examples/s]
+Training Epoch: 19:   0%|[34m          [0m| 0/12051 [00:00<?, ?it/s]wandb: WARNING Serializing object of type str that is 234186 bytes
+logging training data
+wandb: WARNING Serializing object of type str that is 203972 bytes
+wandb: WARNING Serializing object of type str that is 177388 bytes
+wandb: WARNING Serializing object of type str that is 150750 bytes
+wandb: WARNING Serializing object of type str that is 127265 bytes
+wandb: WARNING Serializing object of type str that is 213400 bytes
+wandb: WARNING Serializing object of type str that is 124364 bytes
+Training Epoch: 19/25, batch 12050/12051 completed (loss: 0.669: 100%|[34m██████████[0m| 12051/12051 [7:10:56<00:00,  2.15s/it]   
+/vol3/ctr/.conda/envs/coconut/lib/python3.12/site-packages/torch/distributed/fsdp/_state_dict_utils.py:768: UserWarning: When using ``NO_SHARD`` for ``ShardingStrategy``, full_state_dict willbe returned.
+  warnings.warn(
+/vol3/ctr/.conda/envs/coconut/lib/python3.12/site-packages/torch/distributed/fsdp/_state_dict_utils.py:711: UserWarning: When using ``NO_SHARD`` for ``ShardingStrategy``, full_state_dict willbe returned.
+  warnings.warn(
+saving model.
+eval loss 1.2805136144161224
+Test accuracy: 0.23: 100%|[34m██████████[0m| 500/500 [03:13<00:00,  2.58it/s]
+Question 0: Answer = '300' CoT = '<<4-2=2>>
+<<2/.5=4>>
+<<12/4=3>>
+<<100*3=300>>'
+Full output: 'John cuts his grass to 2 inches.  It grows .5 inches per month.  When it gets to 4 inches he cuts it back down to 2 inches.  It cost $100 to get his grass cut.  How much does he pay per year?
+<|start-latent|><|latent|><|latent|><|latent|><|latent|><|latent|><|latent|><|end-latent|>### 400'
+Extracted Output: '400'
+Question 1: Answer = '10' CoT = '<<1.5*2=3>>
+<<3+2.5=5.5>>
+<<1.5+3+5.5=10>>'
+Full output: 'Hannah has three dogs. The first dog eats 1.5 cups of dog food a day. The second dog eats twice as much while the third dog eats 2.5 cups more than the second dog. How many cups of dog food should Hannah prepare in a day for her three dogs?
+<|start-latent|><|latent|><|latent|><|latent|><|latent|><|latent|><|latent|><|end-latent|>### 13.5'
+Extracted Output: '13.5'
+Question 2: Answer = '1400' CoT = '<<30/100*2000=600>>
+<<2000-600=1400>>'
+Full output: 'Travis wants to fly to Australia. The regular tickets cost about $2000. As Travis is a student, he will get a 30% discount on this price. How much does he need to pay for his ticket?
+<|start-latent|><|latent|><|latent|><|latent|><|latent|><|latent|><|latent|><|end-latent|>### 1400'
+Extracted Output: '1400'
+Question 3: Answer = '15' CoT = '<<21/7=3>>
+<<5*3=15>>'
+Full output: 'A set of 7 spoons costs $21. If each spoon would be sold separately, how much would 5 spoons cost?
+<|start-latent|><|latent|><|latent|><|latent|><|latent|><|latent|><|latent|><|end-latent|>### 15'
+Extracted Output: '15'
+Question 4: Answer = '240' CoT = '<<200*3=600>>
+<<600*.4=240>>'
+Full output: 'Tom bought his games for $200.  They tripled in value and he then sold 40% of them.  How much did he sell the games for?
+<|start-latent|><|latent|><|latent|><|latent|><|latent|><|latent|><|latent|><|end-latent|>### 480'
+Extracted Output: '480'
+Device 0: Cor=115, CoT=0, Total=500
+Accuracy on validation set: 115 / 500 = 0.23
+CoT match on validation set: 0 / 500 = 0.0
+Map (num_proc=4): 100%|██████████| 500/500 [00:00<00:00, 1002.38 examples/s]
+Map (num_proc=32): 100%|██████████| 385620/385620 [00:07<00:00, 50765.95 examples/s] 
+Map (num_proc=32): 100%|██████████| 500/500 [00:00<00:00, 563.37 examples/s] 
+Training Epoch: 20:   0%|[34m          [0m| 0/12051 [00:00<?, ?it/s]wandb: WARNING Serializing object of type str that is 234186 bytes
+logging training data
+wandb: WARNING Serializing object of type str that is 203972 bytes
+wandb: WARNING Serializing object of type str that is 177388 bytes
+wandb: WARNING Serializing object of type str that is 150750 bytes
+wandb: WARNING Serializing object of type str that is 127265 bytes
+wandb: WARNING Serializing object of type str that is 213400 bytes
+wandb: WARNING Serializing object of type str that is 124364 bytes
+wandb: WARNING Serializing object of type str that is 126380 bytes
+Training Epoch: 20/25, batch 12050/12051 completed (loss: 0.7755: 100%|[34m██████████[0m| 12051/12051 [7:00:00<00:00,  2.09s/it]  
+/vol3/ctr/.conda/envs/coconut/lib/python3.12/site-packages/torch/distributed/fsdp/_state_dict_utils.py:768: UserWarning: When using ``NO_SHARD`` for ``ShardingStrategy``, full_state_dict willbe returned.
+  warnings.warn(
+/vol3/ctr/.conda/envs/coconut/lib/python3.12/site-packages/torch/distributed/fsdp/_state_dict_utils.py:711: UserWarning: When using ``NO_SHARD`` for ``ShardingStrategy``, full_state_dict willbe returned.
+  warnings.warn(
+saving model.
+eval loss 1.292978473007679
+Test accuracy: 0.25: 100%|[34m██████████[0m| 500/500 [03:13<00:00,  2.58it/s]
+Question 0: Answer = '300' CoT = '<<4-2=2>>
+<<2/.5=4>>
+<<12/4=3>>
+<<100*3=300>>'
+Full output: 'John cuts his grass to 2 inches.  It grows .5 inches per month.  When it gets to 4 inches he cuts it back down to 2 inches.  It cost $100 to get his grass cut.  How much does he pay per year?
+<|start-latent|><|latent|><|latent|><|latent|><|latent|><|latent|><|latent|><|end-latent|>### 500'
+Extracted Output: '500'
+Question 1: Answer = '10' CoT = '<<1.5*2=3>>
+<<3+2.5=5.5>>
+<<1.5+3+5.5=10>>'
+Full output: 'Hannah has three dogs. The first dog eats 1.5 cups of dog food a day. The second dog eats twice as much while the third dog eats 2.5 cups more than the second dog. How many cups of dog food should Hannah prepare in a day for her three dogs?
+<|start-latent|><|latent|><|latent|><|latent|><|latent|><|latent|><|latent|><|end-latent|>### 12'
+Extracted Output: '12'
+Question 2: Answer = '1400' CoT = '<<30/100*2000=600>>
+<<2000-600=1400>>'
+Full output: 'Travis wants to fly to Australia. The regular tickets cost about $2000. As Travis is a student, he will get a 30% discount on this price. How much does he need to pay for his ticket?
+<|start-latent|><|latent|><|latent|><|latent|><|latent|><|latent|><|latent|><|end-latent|>### 1400'
+Extracted Output: '1400'
+Question 3: Answer = '15' CoT = '<<21/7=3>>
+<<5*3=15>>'
+Full output: 'A set of 7 spoons costs $21. If each spoon would be sold separately, how much would 5 spoons cost?
+<|start-latent|><|latent|><|latent|><|latent|><|latent|><|latent|><|latent|><|end-latent|>### 105'
+Extracted Output: '105'
+Question 4: Answer = '240' CoT = '<<200*3=600>>
+<<600*.4=240>>'
+Full output: 'Tom bought his games for $200.  They tripled in value and he then sold 40% of them.  How much did he sell the games for?
+<|start-latent|><|latent|><|latent|><|latent|><|latent|><|latent|><|latent|><|end-latent|>### 240'
+Extracted Output: '240'
+Device 0: Cor=123, CoT=0, Total=500
+Accuracy on validation set: 123 / 500 = 0.246
+CoT match on validation set: 0 / 500 = 0.0
+Map (num_proc=4): 100%|██████████| 500/500 [00:00<00:00, 920.70 examples/s]
+Map (num_proc=32): 100%|██████████| 385620/385620 [00:08<00:00, 44834.47 examples/s]
+Map (num_proc=32): 100%|██████████| 500/500 [00:00<00:00, 617.58 examples/s] 
+Training Epoch: 21:   0%|[34m          [0m| 0/12051 [00:00<?, ?it/s]wandb: WARNING Serializing object of type str that is 234186 bytes
+logging training data
+wandb: WARNING Serializing object of type str that is 203972 bytes
+wandb: WARNING Serializing object of type str that is 177388 bytes
+wandb: WARNING Serializing object of type str that is 150750 bytes
+wandb: WARNING Serializing object of type str that is 127265 bytes
+wandb: WARNING Serializing object of type str that is 213400 bytes
+wandb: WARNING Serializing object of type str that is 124364 bytes
+wandb: WARNING Serializing object of type str that is 126380 bytes
+wandb: WARNING Serializing object of type str that is 110402 bytes
+Training Epoch: 21/25, batch 12050/12051 completed (loss: 0.743: 100%|[34m██████████[0m| 12051/12051 [7:07:11<00:00,  2.13s/it]   
+/vol3/ctr/.conda/envs/coconut/lib/python3.12/site-packages/torch/distributed/fsdp/_state_dict_utils.py:768: UserWarning: When using ``NO_SHARD`` for ``ShardingStrategy``, full_state_dict willbe returned.
+  warnings.warn(
+/vol3/ctr/.conda/envs/coconut/lib/python3.12/site-packages/torch/distributed/fsdp/_state_dict_utils.py:711: UserWarning: When using ``NO_SHARD`` for ``ShardingStrategy``, full_state_dict willbe returned.
+  warnings.warn(
+saving model.
+eval loss 1.3523551188409328
+Test accuracy: 0.23: 100%|[34m██████████[0m| 500/500 [03:12<00:00,  2.60it/s]
+Question 0: Answer = '300' CoT = '<<4-2=2>>
+<<2/.5=4>>
+<<12/4=3>>
+<<100*3=300>>'
+Full output: 'John cuts his grass to 2 inches.  It grows .5 inches per month.  When it gets to 4 inches he cuts it back down to 2 inches.  It cost $100 to get his grass cut.  How much does he pay per year?
+<|start-latent|><|latent|><|latent|><|latent|><|latent|><|latent|><|latent|><|end-latent|>### 20'
+Extracted Output: '20'
+Question 1: Answer = '10' CoT = '<<1.5*2=3>>
+<<3+2.5=5.5>>
+<<1.5+3+5.5=10>>'
+Full output: 'Hannah has three dogs. The first dog eats 1.5 cups of dog food a day. The second dog eats twice as much while the third dog eats 2.5 cups more than the second dog. How many cups of dog food should Hannah prepare in a day for her three dogs?
+<|start-latent|><|latent|><|latent|><|latent|><|latent|><|latent|><|latent|><|end-latent|>### 13'
+Extracted Output: '13'
+Question 2: Answer = '1400' CoT = '<<30/100*2000=600>>
+<<2000-600=1400>>'
+Full output: 'Travis wants to fly to Australia. The regular tickets cost about $2000. As Travis is a student, he will get a 30% discount on this price. How much does he need to pay for his ticket?
+<|start-latent|><|latent|><|latent|><|latent|><|latent|><|latent|><|latent|><|end-latent|>### 1400'
+Extracted Output: '1400'
+Question 3: Answer = '15' CoT = '<<21/7=3>>
+<<5*3=15>>'
+Full output: 'A set of 7 spoons costs $21. If each spoon would be sold separately, how much would 5 spoons cost?
+<|start-latent|><|latent|><|latent|><|latent|><|latent|><|latent|><|latent|><|end-latent|>### 15'
+Extracted Output: '15'
+Question 4: Answer = '240' CoT = '<<200*3=600>>
+<<600*.4=240>>'
+Full output: 'Tom bought his games for $200.  They tripled in value and he then sold 40% of them.  How much did he sell the games for?
+<|start-latent|><|latent|><|latent|><|latent|><|latent|><|latent|><|latent|><|end-latent|>### 240'
+Extracted Output: '240'
+Device 0: Cor=115, CoT=0, Total=500
+Accuracy on validation set: 115 / 500 = 0.23
+CoT match on validation set: 0 / 500 = 0.0
+Map (num_proc=4): 100%|██████████| 500/500 [00:00<00:00, 1067.02 examples/s]
+Map (num_proc=32): 100%|██████████| 385620/385620 [00:07<00:00, 53008.40 examples/s] 
+Map (num_proc=32): 100%|██████████| 500/500 [00:00<00:00, 643.84 examples/s]
+Training Epoch: 22:   0%|[34m          [0m| 0/12051 [00:00<?, ?it/s]wandb: WARNING Serializing object of type str that is 234186 bytes
+logging training data
+wandb: WARNING Serializing object of type str that is 203972 bytes
+wandb: WARNING Serializing object of type str that is 177388 bytes
+wandb: WARNING Serializing object of type str that is 150750 bytes
+wandb: WARNING Serializing object of type str that is 127265 bytes
+wandb: WARNING Serializing object of type str that is 213400 bytes
+wandb: WARNING Serializing object of type str that is 124364 bytes
+wandb: WARNING Serializing object of type str that is 126380 bytes
+wandb: WARNING Serializing object of type str that is 110402 bytes
+Training Epoch: 22/25, batch 12050/12051 completed (loss: 0.5841: 100%|[34m██████████[0m| 12051/12051 [6:57:56<00:00,  2.08s/it]  
+/vol3/ctr/.conda/envs/coconut/lib/python3.12/site-packages/torch/distributed/fsdp/_state_dict_utils.py:768: UserWarning: When using ``NO_SHARD`` for ``ShardingStrategy``, full_state_dict willbe returned.
+  warnings.warn(
+/vol3/ctr/.conda/envs/coconut/lib/python3.12/site-packages/torch/distributed/fsdp/_state_dict_utils.py:711: UserWarning: When using ``NO_SHARD`` for ``ShardingStrategy``, full_state_dict willbe returned.
+  warnings.warn(
+saving model.
+eval loss 1.2175835072994232
+Test accuracy: 0.3: 100%|[34m██████████[0m| 500/500 [03:11<00:00,  2.61it/s] 
+Question 0: Answer = '300' CoT = '<<4-2=2>>
+<<2/.5=4>>
+<<12/4=3>>
+<<100*3=300>>'
+Full output: 'John cuts his grass to 2 inches.  It grows .5 inches per month.  When it gets to 4 inches he cuts it back down to 2 inches.  It cost $100 to get his grass cut.  How much does he pay per year?
+<|start-latent|><|latent|><|latent|><|latent|><|latent|><|latent|><|latent|><|end-latent|>### 300'
+Extracted Output: '300'
+Question 1: Answer = '10' CoT = '<<1.5*2=3>>
+<<3+2.5=5.5>>
+<<1.5+3+5.5=10>>'
+Full output: 'Hannah has three dogs. The first dog eats 1.5 cups of dog food a day. The second dog eats twice as much while the third dog eats 2.5 cups more than the second dog. How many cups of dog food should Hannah prepare in a day for her three dogs?
+<|start-latent|><|latent|><|latent|><|latent|><|latent|><|latent|><|latent|><|end-latent|>### 11'
+Extracted Output: '11'
+Question 2: Answer = '1400' CoT = '<<30/100*2000=600>>
+<<2000-600=1400>>'
+Full output: 'Travis wants to fly to Australia. The regular tickets cost about $2000. As Travis is a student, he will get a 30% discount on this price. How much does he need to pay for his ticket?
+<|start-latent|><|latent|><|latent|><|latent|><|latent|><|latent|><|latent|><|end-latent|>### 1400'
+Extracted Output: '1400'
+Question 3: Answer = '15' CoT = '<<21/7=3>>
+<<5*3=15>>'
+Full output: 'A set of 7 spoons costs $21. If each spoon would be sold separately, how much would 5 spoons cost?
+<|start-latent|><|latent|><|latent|><|latent|><|latent|><|latent|><|latent|><|end-latent|>### 15'
+Extracted Output: '15'
+Question 4: Answer = '240' CoT = '<<200*3=600>>
+<<600*.4=240>>'
+Full output: 'Tom bought his games for $200.  They tripled in value and he then sold 40% of them.  How much did he sell the games for?
+<|start-latent|><|latent|><|latent|><|latent|><|latent|><|latent|><|latent|><|end-latent|>### 240'
+Extracted Output: '240'
+Device 0: Cor=149, CoT=0, Total=500
+Accuracy on validation set: 149 / 500 = 0.298
+CoT match on validation set: 0 / 500 = 0.0
+Map (num_proc=4): 100%|██████████| 500/500 [00:00<00:00, 1033.91 examples/s]
+Map (num_proc=32): 100%|██████████| 385620/385620 [00:08<00:00, 48112.17 examples/s] 
+Map (num_proc=32): 100%|██████████| 500/500 [00:00<00:00, 633.12 examples/s]
+Training Epoch: 23:   0%|[34m          [0m| 0/12051 [00:00<?, ?it/s]wandb: WARNING Serializing object of type str that is 234186 bytes
+logging training data
+wandb: WARNING Serializing object of type str that is 203972 bytes
+wandb: WARNING Serializing object of type str that is 177388 bytes
+wandb: WARNING Serializing object of type str that is 150750 bytes
+wandb: WARNING Serializing object of type str that is 127265 bytes
+wandb: WARNING Serializing object of type str that is 213400 bytes
+wandb: WARNING Serializing object of type str that is 124364 bytes
+wandb: WARNING Serializing object of type str that is 126380 bytes
+wandb: WARNING Serializing object of type str that is 110402 bytes
+Training Epoch: 23/25, batch 12050/12051 completed (loss: 0.247: 100%|[34m██████████[0m| 12051/12051 [7:00:22<00:00,  2.09s/it]   
+/vol3/ctr/.conda/envs/coconut/lib/python3.12/site-packages/torch/distributed/fsdp/_state_dict_utils.py:768: UserWarning: When using ``NO_SHARD`` for ``ShardingStrategy``, full_state_dict willbe returned.
+  warnings.warn(
+/vol3/ctr/.conda/envs/coconut/lib/python3.12/site-packages/torch/distributed/fsdp/_state_dict_utils.py:711: UserWarning: When using ``NO_SHARD`` for ``ShardingStrategy``, full_state_dict willbe returned.
+  warnings.warn(
+saving model.
+eval loss 1.1982707902789116
+Test accuracy: 0.3: 100%|[34m██████████[0m| 500/500 [03:16<00:00,  2.55it/s] 
+Question 0: Answer = '300' CoT = '<<4-2=2>>
+<<2/.5=4>>
+<<12/4=3>>
+<<100*3=300>>'
+Full output: 'John cuts his grass to 2 inches.  It grows .5 inches per month.  When it gets to 4 inches he cuts it back down to 2 inches.  It cost $100 to get his grass cut.  How much does he pay per year?
+<|start-latent|><|latent|><|latent|><|latent|><|latent|><|latent|><|latent|><|end-latent|>### 200'
+Extracted Output: '200'
+Question 1: Answer = '10' CoT = '<<1.5*2=3>>
+<<3+2.5=5.5>>
+<<1.5+3+5.5=10>>'
+Full output: 'Hannah has three dogs. The first dog eats 1.5 cups of dog food a day. The second dog eats twice as much while the third dog eats 2.5 cups more than the second dog. How many cups of dog food should Hannah prepare in a day for her three dogs?
+<|start-latent|><|latent|><|latent|><|latent|><|latent|><|latent|><|latent|><|end-latent|>### 13'
+Extracted Output: '13'
+Question 2: Answer = '1400' CoT = '<<30/100*2000=600>>
+<<2000-600=1400>>'
+Full output: 'Travis wants to fly to Australia. The regular tickets cost about $2000. As Travis is a student, he will get a 30% discount on this price. How much does he need to pay for his ticket?
+<|start-latent|><|latent|><|latent|><|latent|><|latent|><|latent|><|latent|><|end-latent|>### 1400'
+Extracted Output: '1400'
+Question 3: Answer = '15' CoT = '<<21/7=3>>
+<<5*3=15>>'
+Full output: 'A set of 7 spoons costs $21. If each spoon would be sold separately, how much would 5 spoons cost?
+<|start-latent|><|latent|><|latent|><|latent|><|latent|><|latent|><|latent|><|end-latent|>### 15'
+Extracted Output: '15'
+Question 4: Answer = '240' CoT = '<<200*3=600>>
+<<600*.4=240>>'
+Full output: 'Tom bought his games for $200.  They tripled in value and he then sold 40% of them.  How much did he sell the games for?
+<|start-latent|><|latent|><|latent|><|latent|><|latent|><|latent|><|latent|><|end-latent|>### 240'
+Extracted Output: '240'
+Device 0: Cor=149, CoT=0, Total=500
+Accuracy on validation set: 149 / 500 = 0.298
+CoT match on validation set: 0 / 500 = 0.0
+Map (num_proc=4): 100%|██████████| 500/500 [00:00<00:00, 1078.70 examples/s]
+Map (num_proc=32): 100%|██████████| 385620/385620 [00:07<00:00, 49570.35 examples/s] 
+Map (num_proc=32): 100%|██████████| 500/500 [00:00<00:00, 591.77 examples/s]
+Training Epoch: 24:   0%|[34m          [0m| 0/12051 [00:00<?, ?it/s]wandb: WARNING Serializing object of type str that is 234186 bytes
+logging training data
+wandb: WARNING Serializing object of type str that is 203972 bytes
+wandb: WARNING Serializing object of type str that is 177388 bytes
+wandb: WARNING Serializing object of type str that is 150750 bytes
+wandb: WARNING Serializing object of type str that is 127265 bytes
+wandb: WARNING Serializing object of type str that is 213400 bytes
+wandb: WARNING Serializing object of type str that is 124364 bytes
+wandb: WARNING Serializing object of type str that is 126380 bytes
+wandb: WARNING Serializing object of type str that is 110402 bytes
+Training Epoch: 24/25, batch 12050/12051 completed (loss: 0.4142: 100%|[34m██████████[0m| 12051/12051 [7:38:04<00:00,  2.28s/it]  
+/vol3/ctr/.conda/envs/coconut/lib/python3.12/site-packages/torch/distributed/fsdp/_state_dict_utils.py:768: UserWarning: When using ``NO_SHARD`` for ``ShardingStrategy``, full_state_dict willbe returned.
+  warnings.warn(
+/vol3/ctr/.conda/envs/coconut/lib/python3.12/site-packages/torch/distributed/fsdp/_state_dict_utils.py:711: UserWarning: When using ``NO_SHARD`` for ``ShardingStrategy``, full_state_dict willbe returned.
+  warnings.warn(
+saving model.
+eval loss 1.3335637375712395
+Test accuracy: 0.27: 100%|[34m██████████[0m| 500/500 [03:13<00:00,  2.58it/s]
+Question 0: Answer = '300' CoT = '<<4-2=2>>
+<<2/.5=4>>
+<<12/4=3>>
+<<100*3=300>>'
+Full output: 'John cuts his grass to 2 inches.  It grows .5 inches per month.  When it gets to 4 inches he cuts it back down to 2 inches.  It cost $100 to get his grass cut.  How much does he pay per year?
+<|start-latent|><|latent|><|latent|><|latent|><|latent|><|latent|><|latent|><|end-latent|>### 200'
+Extracted Output: '200'
+Question 1: Answer = '10' CoT = '<<1.5*2=3>>
+<<3+2.5=5.5>>
+<<1.5+3+5.5=10>>'
+Full output: 'Hannah has three dogs. The first dog eats 1.5 cups of dog food a day. The second dog eats twice as much while the third dog eats 2.5 cups more than the second dog. How many cups of dog food should Hannah prepare in a day for her three dogs?
+<|start-latent|><|latent|><|latent|><|latent|><|latent|><|latent|><|latent|><|end-latent|>### 15'
+Extracted Output: '15'
+Question 2: Answer = '1400' CoT = '<<30/100*2000=600>>
+<<2000-600=1400>>'
+Full output: 'Travis wants to fly to Australia. The regular tickets cost about $2000. As Travis is a student, he will get a 30% discount on this price. How much does he need to pay for his ticket?
+<|start-latent|><|latent|><|latent|><|latent|><|latent|><|latent|><|latent|><|end-latent|>### 1400'
+Extracted Output: '1400'
+Question 3: Answer = '15' CoT = '<<21/7=3>>
+<<5*3=15>>'
+Full output: 'A set of 7 spoons costs $21. If each spoon would be sold separately, how much would 5 spoons cost?
+<|start-latent|><|latent|><|latent|><|latent|><|latent|><|latent|><|latent|><|end-latent|>### 15'
+Extracted Output: '15'
+Question 4: Answer = '240' CoT = '<<200*3=600>>
+<<600*.4=240>>'
+Full output: 'Tom bought his games for $200.  They tripled in value and he then sold 40% of them.  How much did he sell the games for?
+<|start-latent|><|latent|><|latent|><|latent|><|latent|><|latent|><|latent|><|end-latent|>### 360'
+Extracted Output: '360'
+Device 0: Cor=135, CoT=0, Total=500
+Accuracy on validation set: 135 / 500 = 0.27
+CoT match on validation set: 0 / 500 = 0.0
+Map (num_proc=4): 100%|██████████| 500/500 [00:00<00:00, 1031.79 examples/s]
+Map (num_proc=32): 100%|██████████| 385620/385620 [00:07<00:00, 49339.50 examples/s] 
+Map (num_proc=32): 100%|██████████| 500/500 [00:00<00:00, 622.08 examples/s]
+Training Epoch: 25:   0%|[34m          [0m| 0/12051 [00:00<?, ?it/s]wandb: WARNING Serializing object of type str that is 234186 bytes
+logging training data
+wandb: WARNING Serializing object of type str that is 203972 bytes
+wandb: WARNING Serializing object of type str that is 177388 bytes
+wandb: WARNING Serializing object of type str that is 150750 bytes
+wandb: WARNING Serializing object of type str that is 127265 bytes
+wandb: WARNING Serializing object of type str that is 213400 bytes
+wandb: WARNING Serializing object of type str that is 124364 bytes
+wandb: WARNING Serializing object of type str that is 126380 bytes
+wandb: WARNING Serializing object of type str that is 110402 bytes
+Training Epoch: 25/25, batch 12050/12051 completed (loss: 0.7356: 100%|[34m██████████[0m| 12051/12051 [7:16:30<00:00,  2.17s/it]  
+/vol3/ctr/.conda/envs/coconut/lib/python3.12/site-packages/torch/distributed/fsdp/_state_dict_utils.py:768: UserWarning: When using ``NO_SHARD`` for ``ShardingStrategy``, full_state_dict willbe returned.
+  warnings.warn(
+/vol3/ctr/.conda/envs/coconut/lib/python3.12/site-packages/torch/distributed/fsdp/_state_dict_utils.py:711: UserWarning: When using ``NO_SHARD`` for ``ShardingStrategy``, full_state_dict willbe returned.
+  warnings.warn(
+saving model.
+eval loss 1.4124603569507599
+Test accuracy: 0.18: 100%|[34m██████████[0m| 500/500 [03:28<00:00,  2.40it/s]
+Question 0: Answer = '300' CoT = '<<4-2=2>>
+<<2/.5=4>>
+<<12/4=3>>
+<<100*3=300>>'
+Full output: 'John cuts his grass to 2 inches.  It grows .5 inches per month.  When it gets to 4 inches he cuts it back down to 2 inches.  It cost $100 to get his grass cut.  How much does he pay per year?
+<|start-latent|><|latent|><|latent|><|latent|><|latent|><|latent|><|latent|><|end-latent|>### 500'
+Extracted Output: '500'
+Question 1: Answer = '10' CoT = '<<1.5*2=3>>
+<<3+2.5=5.5>>
+<<1.5+3+5.5=10>>'
+Full output: 'Hannah has three dogs. The first dog eats 1.5 cups of dog food a day. The second dog eats twice as much while the third dog eats 2.5 cups more than the second dog. How many cups of dog food should Hannah prepare in a day for her three dogs?
+<|start-latent|><|latent|><|latent|><|latent|><|latent|><|latent|><|latent|><|end-latent|>### 13.5'
+Extracted Output: '13.5'
+Question 2: Answer = '1400' CoT = '<<30/100*2000=600>>
+<<2000-600=1400>>'
+Full output: 'Travis wants to fly to Australia. The regular tickets cost about $2000. As Travis is a student, he will get a 30% discount on this price. How much does he need to pay for his ticket?
+<|start-latent|><|latent|><|latent|><|latent|><|latent|><|latent|><|latent|><|end-latent|>### 1400'
+Extracted Output: '1400'
+Question 3: Answer = '15' CoT = '<<21/7=3>>
+<<5*3=15>>'
+Full output: 'A set of 7 spoons costs $21. If each spoon would be sold separately, how much would 5 spoons cost?
+<|start-latent|><|latent|><|latent|><|latent|><|latent|><|latent|><|latent|><|end-latent|>### 15'
+Extracted Output: '15'
+Question 4: Answer = '240' CoT = '<<200*3=600>>
+<<600*.4=240>>'
+Full output: 'Tom bought his games for $200.  They tripled in value and he then sold 40% of them.  How much did he sell the games for?
+<|start-latent|><|latent|><|latent|><|latent|><|latent|><|latent|><|latent|><|end-latent|>### 240'
+Extracted Output: '240'
+Device 0: Cor=88, CoT=0, Total=500
+Accuracy on validation set: 88 / 500 = 0.176
+CoT match on validation set: 0 / 500 = 0.0
